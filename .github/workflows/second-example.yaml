@@ -1,0 +1,21 @@
+name: My SECOND Action
+
+on: push
+
+jobs:
+    first_job: 
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout repo
+          uses: actions/checkout@v6
+          
+        - name: Welcome message
+          run: echo "My first github actions job"
+
+        - name: List files and read file.
+          run: |
+            ls -lrth
+            cat README.md
+          
+        - name: Generate ASCII Artwork
+          run: cowsay -f dragon "Run for the cover, I am a DRAGON!!!! HAHAHAH" >> dragon.txt
