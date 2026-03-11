@@ -10,7 +10,7 @@ jobs:
           uses: actions/checkout@v6
           
         - name: Install cowsay lib
-          run: sudi apt-get install cowsay -y
+          run: sudo apt-get install cowsay -y
           
         - name: Execute cowsay command
           run: cowsay -f dragon "Run for the cover, I am a DRAGON!!!! HAHAHAH" >> dragon.txt
