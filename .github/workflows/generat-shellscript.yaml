@@ -14,4 +14,4 @@ jobs:
           run: ls -lrth
 
         - name: Executing shell script
-          run: ./generate-shellscript.sh
+          run: ./asciiscript.sh
