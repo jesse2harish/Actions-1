@@ -1,0 +1,17 @@
+name: Gererate ASCII artwork
+
+on: push
+
+jobs:
+    ASCII_job: 
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout repo
+          uses: actions/checkout@v6
+          
+                    
+        - name: List repo files
+          run: ls -lrth
+
+        - name: Executing shell script
+          run: ./generate-shellscript.sh
