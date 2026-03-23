@@ -21,7 +21,7 @@ jobs:
         env:
           RUNNER_CONTEXT: ${{ toJson(runner) }}
         run: echo "$RUNNER_CONTEXT"
-      - name: Dump strategy context
+      - name: Dump secrets context
         env:
           SECRETS_CONTEXT_CONTEXT: ${{ toJson(secrets) }}
         run: echo "$SECRETS_CONTEXT"
